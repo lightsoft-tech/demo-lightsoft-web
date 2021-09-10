@@ -5,6 +5,11 @@
     --blue-light-primary: #90e0ef;
     --blue-light-secondary: #caf0f8;
 }
+
+body{
+    overflow-x: hidden;
+}
+
 /* backgound */
 .custom-bg-dark-blue-primary{
     background-color: var(--blue-dark-primary);

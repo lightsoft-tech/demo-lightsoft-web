@@ -35,11 +35,11 @@
                         <div class="flex-col w-full h-auto h-full overflow-hidden bg-white rounded-lg select-none md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
                             <div class="flex flex-col items-center justify-center w-full h-full mt-12 text-center text-indigo-700 md:text-indigo-200 md:w-2/3 md:mt-0 md:flex-row md:items-center">
                                 <a href="#" class="inline-block px-4 py-2 mx-2 font-medium text-left text-indigo-700 md:text-white md:px-0 lg:mx-3 md:text-center">Home</a>
-                                <a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center">Services</a>
-                                <a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center">Our Works</a>
-                                <a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center">Our Teams</a>
-                                <a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center">Our Partners</a>
-                                <a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center">About Us</a>
+                                <a href="#services" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center" id="to-our-services">Services</a>
+                                <a href="#works" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center" id="to-our-works">Our Works</a>
+                                <a href="#teams" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center" id="to-our-teams">Our Teams</a>
+                                <a href="#partners" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center" id="to-our-partners">Our Partners</a>
+                                <a href="#about" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center" id="to-about-us">About Us</a>
                             </div>
                             <div class="flex flex-col items-center justify-end w-full h-full pt-4 md:w-1/3 md:flex-row md:py-0">
                                 <a href="#_" class="inline-flex items-center justify-center px-4 py-2 mr-1 text-base font-medium leading-6 custom-text-dark-blue-secondary whitespace-no-wrap transition duration-150 ease-in-out bg-white border border-transparent rounded-full hover:bg-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700" data-aos="flip-left" data-aos-duration="1000">
@@ -70,8 +70,8 @@
                     <div class="max-w-lg mx-auto mt-6 text-sm text-center text-indigo-200 md:mt-12 sm:text-base md:max-w-xl md:text-lg xl:text-xl ">If you are ready to change the way you design websites, then you'll want to use our block builder to make it fun and easy!</div>
                 </div>
                 <div class="items-center max-w-md mx-auto mt-12 overflow-hidden text-center rounded-full">
-                    <a class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-white hover:bg-gray-50 custom-text-dark-blue-secondary font-semibold rounded-l-xl rounded-t-xl transition duration-200" href="#" data-aos="fade-right" data-aos-duration="1000">Our Team</a>
-                    <a class="inline-block w-full lg:w-auto py-2 px-6 leading-loose text-white font-semibold custom-bg-blue-primary border-2 custom-border-dark-blue-secondary hover:custom-border-dark-blue-primary rounded-l-xl rounded-t-xl transition duration-200" href="#" data-aos="fade-left" data-aos-duration="1000">Our Works</a>
+                    <a class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-white hover:bg-gray-50 custom-text-dark-blue-secondary font-semibold rounded-l-xl rounded-t-xl transition duration-200" href="#teams" data-aos="fade-right" data-aos-duration="1000" id="to-our-teams-button">Our Team</a>
+                    <a class="inline-block w-full lg:w-auto py-2 px-6 leading-loose text-white font-semibold custom-bg-blue-primary border-2 custom-border-dark-blue-secondary hover:custom-border-dark-blue-primary rounded-l-xl rounded-t-xl transition duration-200" href="#works" data-aos="fade-left" data-aos-duration="1000" id="to-our-works-button">Our Works</a>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
 </section>
 
 <!-- Section 2 -->
-<section class="pt-20 bg-gray-50">
+<section class="pt-20 bg-gray-50" id="about-us">
   <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
     <div class="flex flex-wrap items-center -mx-3">
         <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0" data-aos="flip-up" data-aos-duration="1000">
@@ -111,7 +111,7 @@
 </section>
 
 <!-- Section 3 -->
-<section class="pt-20 pb-5 bg-white custom-bg-blob">
+<section class="pt-20 pb-5 bg-white custom-bg-blob" id="our-services">
     <div class="container max-w-6xl mx-auto">
         <div  data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos="fade-down">
             <h2 class="text-4xl font-bold tracking-tight text-center custom-text-dark-blue-primary">Our <span class="custom-highlight">Services</span></h2>
@@ -180,7 +180,7 @@
 </section>
 
 <!-- Section 4 -->
-<section class="custom-bg-white">
+<section class="custom-bg-white" id="our-works">
     <div class="w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:pt-12 sm:space-y-8 md:space-y-16 max-w-7xl">
 
         <div class="flex flex-col items-center sm:px-5 md:flex-row">
@@ -239,7 +239,7 @@
 </section>
 
 <!-- Section 5 -->
-<section class="custom-bg-light-blue-secondary pt-14 pb-14 custom-bg-wave">
+<section class="custom-bg-light-blue-secondary pt-14 pb-14 custom-bg-wave" id="our-partners">
     <div class="container px-8 mx-auto sm:px-12 lg:px-20" data-aos="zoom-in-down" data-aos-duration="1000">
         <h2 class="text-4xl font-bold tracking-tight text-center custom-text-dark-blue-primary">Our <span class="custom-highlight">Partners</span></h2>
         <p class="mt-2 mb-10 text-lg text-center custom-text-dark-blue-secondary">We provide the best in class sevices for our customer.</p>
@@ -267,7 +267,7 @@
 </section>
 
 <!-- Section 6 -->
-<section class="relative py-20 overflow-hidden bg-white custom-bg-shape">
+<section class="relative py-20 overflow-hidden bg-white custom-bg-shape" id="our-teams">
     <span class="absolute top-0 right-0 flex flex-col items-end mt-0 -mr-16 opacity-60">
         <span class="container hidden w-screen h-32 max-w-xs mt-20 transform rounded-full rounded-r-none md:block md:max-w-xs lg:max-w-lg 2xl:max-w-3xl bg-blue-50"></span>
     </span>
@@ -445,7 +445,7 @@
 </section>
 
 <!-- Section 7 -->
-<section class="custom-bg-dark-blue-primary ">
+<footer class="custom-bg-dark-blue-primary ">
     <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">
@@ -515,11 +515,12 @@
             © 2021 Lightsoft, Inc. All rights reserved.
         </p>
     </div>
-</section>
+</footer>
 
 <!-- AlpineJS Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/custom-script.js"></script>
 <script>
     AOS.init();
 </script>
