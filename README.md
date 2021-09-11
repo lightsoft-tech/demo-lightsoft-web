@@ -1,1 +1,1 @@
-Preview Demo : [a link](https://lightsoft-tech.github.io/demo-lightsoft-web/)
+Preview Demo : [lightsoft-tech.demo](https://lightsoft-tech.github.io/demo-lightsoft-web/)
