@@ -140,7 +140,8 @@ body {
     cursor: pointer;
     font-size: 16px;
     line-height: 48px;
-    width: 48px
+    width: 48px;
+    height: 48px;
 }
 /* end scroll to top */
 
