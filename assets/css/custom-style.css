@@ -68,7 +68,6 @@ body {
     background-position: center center;
     background-size: cover
 }
-
 /* end background */
 
 /* text color*/
@@ -91,7 +90,6 @@ body {
 .custom-text-light-blue-secondary {
     color: var(--blue-light-secondary);
 }
-
 /* end text color */
 
 /* border color*/
@@ -114,7 +112,6 @@ body {
 .custom-border-light-blue-secondary {
     border-color: var(--blue-light-secondary);
 }
-
 /* end border color */
 
 /* custom shape */
@@ -123,6 +120,9 @@ body {
     border-radius: 10% 10% 100% 10% / 0% 0% 10% 0%;
 }
 
+.custom-trapesium-shape-footer {
+    border-radius: 40% 0% 0% 0% / 20% 0% 0% 0%;
+}
 /* end custom shape */
 
 /* custom highlight */
@@ -130,9 +130,72 @@ body {
     background-image: linear-gradient(0deg, #00b4d8 17.5px, #00b4d8 0, transparent 0, transparent 0);
     border-bottom-left-radius: 7px;
 }
-
 /* end highlight */
 
-.custom-trapesium-shape-footer {
-    border-radius: 40% 0% 0% 0% / 20% 0% 0% 0%;
+/* scroll to top */
+#scrollToTopBtn {
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px
 }
+/* end scroll to top */
+
+/* animate bounce */
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-25px);
+        transform: translateY(-25px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-25px);
+        transform: translateY(-25px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+        -webkit-transform: translateY(-25px);
+        transform: translateY(-25px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+.custom-bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+/* end animate bounce */

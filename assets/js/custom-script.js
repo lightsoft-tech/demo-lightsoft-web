@@ -23,6 +23,7 @@ function doScrolling(element, duration) {
     })
 }
   
+document.getElementById('to-home').addEventListener('click', doScrolling.bind(null, '#home', 1500))
 document.getElementById('to-our-services').addEventListener('click', doScrolling.bind(null, '#our-services', 1500))
 document.getElementById('to-our-works').addEventListener('click', doScrolling.bind(null, '#our-works', 1500))
 document.getElementById('to-our-teams').addEventListener('click', doScrolling.bind(null, '#our-teams', 1500))
@@ -32,3 +33,15 @@ document.getElementById('to-about-us').addEventListener('click', doScrolling.bin
 
 document.getElementById('to-our-works-button').addEventListener('click', doScrolling.bind(null, '#our-works', 1500))
 document.getElementById('to-our-teams-button').addEventListener('click', doScrolling.bind(null, '#our-teams', 1500))
+
+var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+var rootElement = document.documentElement
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
