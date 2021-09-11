@@ -14,7 +14,7 @@
     <link rel="icon" href="assets/logos/favico.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
 
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <div @click="showMenu = !showMenu"
-                            class="fixed right-0 z-50 flex flex-col items-end w-10 h-10 p-2 mr-5 rounded-full cursor-pointer md:hidden hover:bg-gray-900 hover:bg-opacity-10 custom-bg-dark-blue-primary"
+                            class="fixed right-0 z-50 flex flex-col items-end w-10 h-10 p-2 mr-6 rounded-full cursor-pointer md:hidden hover:bg-gray-900 hover:bg-opacity-10 custom-bg-dark-blue-primary"
                             :class="{ 'text-white': showMenu, 'text-gray-100': !showMenu}">
                             <svg class="w-6 h-6" x-show="!showMenu" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"
@@ -2790,7 +2790,7 @@
                 © 2021 Lightsoft, Inc. All rights reserved.
             </p>
         </div>
-        <div class="fixed bottom-0 right-0 w-16 h-16 mb-1 cursor-pointer">
+        <div class="fixed bottom-0 right-0 w-16 h-16 mb-1 mr-2 cursor-pointer">
             <div id="scrollToTopBtn" class="p-3 custom-bg-gradient custom-bounce">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
@@ -2805,7 +2805,9 @@
     <script src="assets/js/custom-script.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({
+            startEvent: 'load',
+        });
     </script>
 
 
